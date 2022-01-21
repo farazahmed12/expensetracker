@@ -1,32 +1,26 @@
-import react, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 
-import CharacterGrid from "./CharacterGrid";
 import "./App.css";
-import Search from "./Search";
+import Header from "./components/Header";
+import Balance from "./components/Balance";
+import IncomeExpenses from "./components/IncomeExpenses";
+import TransactionList from "./components/TransactionList";
+import AddTransaction from "./components/AddTransaction";
+
+// Import Global Provider
+import { GlobalProvider } from "./Context/GlobalState";
 
 function App() {
-  const [query, setQuery] = useState("");
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    const getApi = async () => {
-      const result = await axios(
-        `https://www.breakingbadapi.com/api/characters?name=${query}`
-      );
-      console.log(result.data);
-
-      setItems(result.data);
-    };
-    getApi();
-  }, [query]);
-
   return (
-    <div className="App">
-      <Search setQuery={setQuery} />
-
-      <CharacterGrid items={items} />
-    </div>
+    <GlobalProvider className="container mt-5">
+      <Header />
+      <div className="container">
+        <Balance />
+        <IncomeExpenses />
+        <TransactionList />
+        <AddTransaction />
+      </div>
+    </GlobalProvider>
   );
 }
 
