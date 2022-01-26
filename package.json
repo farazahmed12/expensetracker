@@ -1,6 +1,5 @@
 {
   "name": "expensetracker2022",
-  "homepage": "https://farazahmed12.github.io/expensetracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
