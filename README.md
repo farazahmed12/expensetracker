@@ -24,7 +24,7 @@
 <hr />
 
 <h5>My Github Profile Link:</h5>
-<a href=''>
+<a href='https://github.com/farazahmed12'>
   
   <img height='28rem'  src='https://img.shields.io/badge/Faraz%20Ahmed-Faraz%20Ahmed-181717?style=for-the-badge&logo=github' />
 </a>
