@@ -5,7 +5,7 @@
 
 <h3>For Project Demo Follow the Link (github pages): https://farazahmed12.github.io/expensetracker/</h3>
 <hr />
-<h3>Skills:</h3>
+<h3> ⚙ Skills:</h3>
 
 <ul>
   <li>React Hooks</li>
